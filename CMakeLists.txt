@@ -16,24 +16,9 @@ target_include_directories(boost_beast INTERFACE include)
 
 target_link_libraries(boost_beast
   INTERFACE
-    Boost::asio
-    Boost::assert
-    Boost::bind
-    Boost::config
-    Boost::container
-    Boost::core
-    Boost::endian
-    Boost::intrusive
-    Boost::logic
-    Boost::mp11
-    Boost::optional
-    Boost::smart_ptr
-    Boost::static_assert
+    Boost::exception
+    Boost::headers
     Boost::system
-    Boost::throw_exception
-    Boost::type_traits
-    Boost::utility
-    Boost::winapi
 )
 
 target_compile_features(boost_beast INTERFACE cxx_std_11)
